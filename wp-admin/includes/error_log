@@ -1,0 +1,2 @@
+[19-Oct-2024 04:54:14 America/Toronto] PHP Warning:  Version warning: Imagick was compiled against ImageMagick version 1692 but version 1693 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[19-Oct-2024 20:51:50 America/Toronto] PHP Warning:  Version warning: Imagick was compiled against ImageMagick version 1692 but version 1693 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0

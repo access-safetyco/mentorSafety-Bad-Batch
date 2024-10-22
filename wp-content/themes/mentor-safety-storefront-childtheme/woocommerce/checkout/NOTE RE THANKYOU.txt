@@ -1,0 +1,21 @@
+This code has been added to the end of the thankyou.php file
+
+<!-- Event snippet for Refresher conversion page --> 
+<script> 
+    gtag('event', 'conversion', {
+        'send_to': 'AW-976599563/pJ_DCKKMvoYBEIv01tED', 
+        'transaction_id': '' 
+    }); 
+</script>
+
+
+The code below was replaced on 08/23/2022
+
+<!-- Event snippet for Mentor Training online registration conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-774315242/tqy6CLbVt5QBEOq5nPEC',
+      'transaction_id': ''
+  });
+</script>
+<!-- Event snippet for Mentor Training online registration conversion page -->

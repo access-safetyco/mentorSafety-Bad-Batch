@@ -1,0 +1,786 @@
+/* 
+Theme Name: Mentor Safety Storefront Child Theme 
+Version: 1.0 
+Description: Child theme for Storefront. 
+Author: Woo
+Author URI: http://woocommerce.com 
+Template: storefront 
+*/  
+
+/* --------------- Theme customization starts here ----------------- */
+
+body, button, input, textarea {
+    font-family: "Exo",HelveticaNeue-Light, Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+blockquote + h2, blockquote + h3, blockquote + h4, blockquote + header h2, form + h2, form + h3, form + h4, form + header h2, ol + h2, ol + h3, ol + h4, ol + header h2, p + h2, p + h3, p + h4, p + header h2, table + h2, table + h3, table + h4, table + header h2, ul + h2, ul + h3, ul + h4, ul + header h2 {
+    margin-top: 0.2906835em !important;
+}
+body, .secondary-navigation a, .onsale, .pagination .page-numbers li .page-numbers:not(.current), .woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+    color: #3b3b3b /*#6d6d6d*/;
+}
+#page {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+#masthead {
+    background-image: url("images/header-stripe.png");
+    background-repeat:  repeat-x;
+    background-position: center top;
+}
+.site-header, .secondary-navigation ul ul, .main-navigation ul.menu > li.menu-item-has-children::after, .secondary-navigation ul.menu ul, .storefront-handheld-footer-bar, .storefront-handheld-footer-bar ul li > a, .storefront-handheld-footer-bar ul li.search .site-search, button.menu-toggle, button.menu-toggle:hover {
+    background-color: transparent;
+}
+
+.site-header {
+    border-bottom-color: transparent;
+}
+p, ol, ul, h1, h2 {min-width: 230px;}
+.post-type-archive-tribe_events p, .post-type-archive-tribe_events ol, .post-type-archive-tribe_events ul {min-width: 100%;}
+/* .woocommerce-active .site-header .site-header-cart {
+    min-width: 21.7391304348%;
+} */
+.woocommerce-active .site-header .site-header-cart {
+    min-width: 200px;
+}
+/* ===== LOGO ===== */
+.site-header .custom-logo-link img, .site-header .site-logo-anchor img, .site-header .site-logo-link img {
+    max-width: 250px !important;
+}
+.site-header .custom-logo-link, .site-header .site-logo-anchor, .site-header .site-logo-link {
+    float: left !important;
+}
+a.site-logo-link {
+    z-index: 900;
+    position: relative;
+}
+/* ============= NAVIGATION ================ */
+.main-navigation ul li a {
+    padding: .375em 0;
+    display: block;
+	border-bottom: 1px solid;
+}
+.main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, a.cart-contents:hover, .site-header-cart .widget_shopping_cart a:hover, .site-header-cart:hover > li > a, .site-header ul.menu li.current-menu-item > a {
+    color: #747474;
+    font-weight: 700;
+}
+.main-navigation ul.menu li a, .secondary-navigation ul.menu li a, .main-navigation ul.menu ul li a, .main-navigation ul.nav-menu ul li a {font-weight: 700;}
+.main-navigation ul li a:hover, .main-navigation ul li:hover > a {
+    background-image: none;
+}
+.main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a {
+    background-image: none; 
+}
+/* ===== CART ===== */
+.woocommerce-active .site-header .main-navigation {
+    width: 73.9130434783%;
+    float: none;
+    clear: both;
+	}
+.col2-set .form-row-last { /* --- force Last name to sit beside First name --- */
+    width: 47.556%;
+}
+.product-thumbnail img {display: none;} /* This will hide the thumbnail image in the shopping cart... not used on this site */
+/* ===== Navigation ===== */
+.col-full::after {
+    clear: none;
+}
+.woocommerce-active .site-header .site-header-cart {
+    clear: none;
+    float: right;
+	}
+.woocommerce-active .site-header .main-navigation { /* moves MENU button up next to logo */
+    width: 100%;
+    float: none;
+    clear: none;
+	}
+#nf-form-1-cont {
+	width: 100%; 
+	float: left; 
+	margin-right: 3em;
+}
+
+/* ================= THE CONTENT AREA ================= */
+.entry-title span {
+    font-size: 80%;
+    font-weight: 700;
+}
+.entry-title, .blog .entry-title a {font-weight: 900; color: #000000;}
+hr {
+    border: 0;
+    height: 4px;
+    background: #FEC941;
+    background-image: linear-gradient(to right, #FFFFFF, #FEC941, #FFFFFF);
+	display: block;
+	margin: 1em 0;
+	box-sizing: content-box;
+	clear: both;
+}
+.columns-4, .su-row {margin: 0 0 1em 0; padding: 0; width: 100%; float: left; text-align: center; }
+.columns-4 h4, .su-row h4 {
+    margin: 0 0 0 0;
+    font-weight: 900;
+    line-height: 1.25;
+}
+.columns-4 p, .su-row p {
+	margin: 0 0.75em; 
+	min-width: 150px !important; 
+	color: #3b3b3b /*#6d6d6d*/;
+}
+.columns-4 a, .su-row a {
+	color: #3b3b3b /*#6d6d6d*/;
+}
+a .columns-4 p, .su-row a p {
+	color: #3b3b3b /*#6d6d6d*/;
+}
+div a:hover .columns-4 p, div a:focus .columns-4, .su-row a:hover, .su-row a:focus {
+	color: #3b3b3b;
+}
+blockquote {
+    padding: 0;
+	border-left: 0px;
+    border-bottom: 3px solid rgb(255, 234, 172);
+    font-weight: 900;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    font-size: 2em;
+    line-height: 1.15;
+	font-style: normal;
+	margin-left: 0;
+}
+/* ================= HOME PAGE ================= */
+.home header.entry-header {
+    display: none;
+}
+img.home-image {
+	top: -1em;
+	position: relative;
+}
+.home-headline-wrapper {
+    top: -3em;
+    display: block;
+    position: relative;
+}
+.home-headline-left {
+float: left; 
+width: 100%;
+padding-bottom: 1em;
+}
+.home-headline-right {
+	float: left; 
+	width: 100%;
+	display: none;
+}
+.home-headline-left span {
+font-weight: 400;
+font-size: 1.25em;
+line-height: 1.15;
+width: auto;
+color: #000;
+}
+.home-headline-left span.home-title {
+font-weight: 900;
+font-size: 4em;
+height: 0.85em;
+line-height: 55%;
+width: auto;
+display: block;
+}
+.home-para-left {
+    font-size: 150%;
+    line-height: 1.25;
+    color: #000;
+    font-weight: 700;
+}
+.wrapper__region-links {    width: 95%;
+    margin: 0 auto;}
+.region-links {width: 100%; text-align: center;}
+.region-links a {text-decoration: none !important; cursor: pointer; }
+.region-links h2 {margin: 0;}
+.region-links p {margin: 0;}
+a.region-links__calendar {
+	display: block; 
+	text-decoration: none;     
+	cursor: pointer;
+    text-align: center;
+    margin: 0.9rem auto 0 auto;
+    border: 2px solid #fec941;
+    width: 70%;
+}
+
+/* THE EVENT CALENDAR */
+.tribe-events-event-image {float: right; margin: 0 3%;}
+table:not( .has-background ) th {
+    background-color: #fec941;
+    color: #000;
+}
+
+/* The Event Calendar Shortcode */
+.entry-title.summary {
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.ecs-event-list li {margin-bottom: 1em;}
+
+.alignleft {
+	 margin-right: 2em;
+}
+/* Make ol list align when next to a floated element */
+ol.withfloat { list-style-position:inside; display: table; }
+ol.withfloat li {
+    margin-left: 1.0em;
+    text-indent: -1em;
+}
+.tribe-events-before-html li, .tribe-events-after-html li {margin: 0 !important;}
+/* hide past events in calendar */
+.tribe-events-calendar td.tribe-events-past .tribe-events-month-event-title a,
+.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore a,
+.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore {
+	display: none;
+}
+
+.events-archive.events-gridview #tribe-events-content table.tribe-events-calendar td.tribe-events-past .type-tribe_events {
+	border: none;
+	box-shadow: none;
+}
+/* end hide past events in calendar */
+.tribe-event-description {
+    margin-bottom: 1.5em;
+}
+.tribe-events-event-cost form {
+    margin-bottom: 0em;
+}
+/* ========= WooCommerce ========== */
+.col2-set .form-row-last {
+    width: 100%;
+}
+.col2-set .form-row-first {
+    margin-right: 5% !important;
+    width: 100%;
+}
+.hentry .entry-content a:not(.button).tribe-checkout-backlink {
+    text-decoration: none;
+}
+.tribe-checkout-backlinks {
+    display: block;
+	float: right;
+}
+.ecs-no-events {font-weight: bold;}
+/* ========= WP-Client ============ */
+.su-tabs-panes h2, .su-tabs-nav {font-weight: 700;}
+.wpc_client_client_pages_list a:before {
+	content: "\f15b";
+	font-family: "FontAwesome";
+	margin-right: 0.5em;
+	display: block;
+	float: left;
+	opacity: 0.35;
+	margin-left: 1.618em;
+	width: 1em;
+}
+/* ========= End of WP-Client ============ */
+/* FOOTER */
+.site-footer {
+    background-color: #252525;
+    color: #FFFFFF;
+    border-top: 5px solid #FFC000;
+}
+.site-footer a:not(.button) {
+    color: #FFFFFF;
+}
+.site-info {
+    padding: 2.617924em 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.storefront-handheld-footer-bar {
+    background-color: #FFC000;
+}
+/* -------- search tool ---------- */
+.storefront-handheld-footer-bar ul li.search .site-search {
+    bottom: -5em;
+} /* ------- end of search tool ----------- */
+/* SOCIAL MEDIA MENU */
+.widget_nav_menu .menu-social-media-container ul li {
+    display: inline-block !important;
+    padding-right: 1em;
+}
+.widget_nav_menu ul li::before {
+    display: inline-block;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	font: normal 20px/1 'FontAwesome';
+	font-family: FontAwesome;
+}
+.widget_nav_menu ul li.facebook::before {
+    content: "\f09a";	
+}
+.widget_nav_menu ul li.linkedin::before {
+    content: "\f08c";
+}
+.widget_nav_menu ul li.twitter::before {
+    content: "\f081";
+} 
+.footer-widgets.col-2 .block {
+	width: 100%;
+}
+/*  .footer-widgets.col-2 .block::before {
+    content: "";
+    background-image: url(https://mentorsafety.com/mscroot/wp-content/uploads/2020/03/Consumer-Choice-Award-2020-London-200x200-1.png);
+    background-size: 100px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    float: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1em;
+}  */
+.widget_nav_menu {margin: 0 0 0 0;} 
+.widget_nav_menu ul {text-align: center;}
+.footer-widgets {
+    padding-top: 1.235801032em;
+}
+.site-footer .footer-widget-2 a:not(.button):not(.components-button), .site-footer .site-info a:not(.button):not(.components-button) {
+    color: #fff !important;
+    text-decoration: underline;
+}
+/* Footer Widget 2 */
+.my-footer-column-2 {display: flex; flex-direction: row; justify-content: space-around;}
+img.wsib-badge {width: 200px; text-align: center; margin: 0 20% 0 10%; height: 120px;}
+img.consumer-choice {height: auto; width: 150px; text-align: center; margin: 0 20% 0 20%;}
+/* END Footer Widget 2 */
+/* END OF FOOTER */
+/* SPECIAL SNIPPETS */
+.alignleft {
+    display: inline-block;
+    float: none;
+    max-width: 100%;
+	height: auto;
+	clear: both;
+	margin-right: 100%;
+}
+.alignright {
+    display: inline-block;
+    float: none;
+    max-width: 100%;
+	height: auto;
+	clear: both;
+	margin-right: 100%;
+	margin-left: 0;
+}
+.clearboth {clear: both; margin-bottom: 1em;}
+/* ===============BUTTON============= */
+.btn-primary {
+    height: 45px;
+    background-color: #d8d8d8;
+    border: none;
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 42px;
+    min-width: 160px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+.btn-round-corners {
+    border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active, .btn-primary:active {
+	background-color: #9d9d9d; color:#f8f8f8;
+	}
+.line-btn-primary {
+    height: 45px;
+    background-color: rgb(253, 211, 86);
+    border: 1px solid #000;
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 42px;
+    min-width: 160px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+.line-btn-primary:hover {color:#6d6d6d;border:1px solid #d8d8d8;}
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+margin-left: auto;
+margin-right: auto;
+	box-shadow: 0 0 0 0 currentColor !important;
+/* display: block; */
+}
+.btns-container {
+    width: auto;
+    float: none;
+    margin: 1em auto;
+    text-align: center;
+}
+/* ============== Raised Button ============== */
+.raised-button, a.raised-button {
+    border: 1px solid #777;
+    border-color: rgba(0,0,0,0.2);
+    border-bottom-color: #333;
+    border-bottom-color: rgba(0,0,0,0.4);
+    box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
+    cursor: pointer;
+    display: inline-block;
+    font: bold 100%/2.1 "Lucida Grande", Tahoma, sans-serif;
+    padding: 0 .95em 0 .95em;
+    text-align: center;
+    text-decoration: none;
+    /*text-shadow: 0 1px 0 rgba(0,0,0,0.5);*/
+    white-space: nowrap;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    border-radius: .3em;
+}
+.raised-button {
+    background-color: #fec941;
+    color: #030037;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+body .raised-button {
+    margin: 8px 4px;
+    font-size: 26px;
+}
+.raised-button{
+    background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+}
+.raised-button:before {
+    border-right: 0.075em solid rgba(0,0,0,0.1);
+    font: 120%/1.65 zocial;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0.5em 0 0;
+    padding: 0 0.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    box-shadow: 0.075em 0 0 rgba(255,255,255,0.25);
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+.raised-button:hover {
+	background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 49%, rgba(0,0,0,0.05) 51%, rgba(0,0,0,0.15));
+}
+.raised-button:hover, .raised-button:focus {
+	background-image: linear-gradient(rgba(255,255,255,.15) 49%, rgba(0,0,0,.1) 51%, rgba(0,0,0,.15));
+}
+
+.raised-button:active {
+	background-image: linear-gradient(bottom, rgba(255,255,255,.1), rgba(255,255,255,0) 30%, transparent 50%, rgba(0,0,0,.1));
+}
+/* =============== Ultimate Shortcodes ================ */
+.su-column-inner {text-align: left;}
+.left-justified .su-column-inner  {text-align: left;}
+.center-justified .su-column-inner  {text-align: center;}
+/* =============== Authorize.net SIM Plugin ================ */
+.acceptPaymentBody[_ngcontent-c0] {
+    font-family: "Exo",HelveticaNeue-Light, Helvetica,Arial,"Lucida Grande",sans-serif !important;
+}
+/* === Registration Page Map === */
+.large-map {display: none;}
+.small-map {display: block;}
+.smallest-map {display: none;}
+/* === Registration Page Map === */
+/* === Ticket form modifications === */
+body.page-tribe-attendee-registration .tribe-common .tribe-tickets__mini-cart .tribe-tickets__item__content__subtitle {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+.tribe-tickets-meta-required header h3 {
+    line-height: 100%;
+    font-size: 1em;
+    font-weight: 700;
+}
+.entry .entry-content .tribe-common .tribe-tickets__item__attendee__fields .tribe-tickets-meta-label, .entry .entry-content .tribe-common .tribe-tickets__item__attendee__fields label, .tribe-common .tribe-tickets__item__attendee__fields .tribe-tickets-meta-label, .tribe-common .tribe-tickets__item__attendee__fields label {
+     width: auto;
+}
+#tribe-tickets__mini-cart .tribe-tickets__item__content__title.tribe-tickets--no-description > div {
+    visibility: visible;
+}
+
+#tribe-tickets__mini-cart .tribe-tickets__item__content__title.tribe-tickets--no-description {
+    visibility: hidden;
+}
+div.tribe-tickets__item__details__content {
+    font-size: 0.8em;
+    font-style: italic;
+}
+/* The Event Calendar - modifications to new Calendar theme */
+.tribe-events-calendar-month a {
+    text-decoration: none !important;
+}
+.tribe-common .tribe-common-h8 {
+    font-size: 14px;
+    line-height: 1.38;
+}
+/* resize Event Popup */
+.tooltipster-base.tribe-events-tooltip-theme {
+    max-width: 450px;
+    width: 450px;
+	min-height: 260px;
+}
+
+.tribe-events .tribe-events-calendar-month__calendar-event-tooltip-featured-image-wrapper {
+    display: block;
+    position: absolute;
+}
+
+.tribe-events .tribe-events-calendar-month__calendar-event-tooltip-datetime,
+.tribe-events .tribe-events-calendar-month__calendar-event-tooltip-title,
+.tribe-events .tribe-events-calendar-month__calendar-event-tooltip-description,
+.tribe-events .tribe-events-calendar-month__calendar-event-tooltip-cost {
+    margin-left: 220px;
+    max-width: 450px;
+}
+
+.tribe-events-calendar-month__calendar-event-tooltip-featured-image-wrapper {
+    width: 206px;
+    height: 250px;
+    overflow: hidden;
+}
+/* Web Copy First Draft page 
+body.page-tribe-attendee-registration .tribe-common .tribe-tickets__registration__page-title {
+    position: relative;
+    visibility: hidden;
+}
+body.page-tribe-attendee-registration .tribe-common .tribe-tickets__registration__page-title::before {
+    content: 'Attendee Information';
+    display: block;
+    position: absolute;
+    visibility: visible;
+}  */
+#modal-shortcode {height: 100%; padding: 2em 4em 2em 2em; overflow-y: auto;}
+
+/* hide breadcrumbs on Event Calendar page */
+body.post-type-archive-tribe_events div.storefront-breadcrumb {display: none;}
+body.post-type-archive-tribe_events .tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+    padding-top: 0 !important;
+}
+/* show title on Event Calendar page */
+.calendar-title-only {display: none;}
+body.post-type-archive-tribe_events .calendar-title-only {display: block; margin-bottom: 1em;}
+/* ============== @media settings ============== */
+@media (max-width: 568px) {
+/* == COVID-19 POPUP == */
+#modal-shortcode {height: 450px; padding: 2em 6em 2em 2em; overflow-y: scroll;}
+#modal-shortcode li {width: 90%;}
+.mw-title {
+    margin-bottom: 0.35em;
+}
+/* === Registration Page Map === */
+.large-map {display: none;}
+.small-map {display: none;}
+.smallest-map {display: block;}
+/* === Registration Page Map === */
+/* Footer Widget 2 */
+.my-footer-column-2 {display: flex; flex-direction: column; justify-content: space-around;}
+img.wsib-badge {text-align: center; margin: 10px auto;}
+img.consumer-choice {text-align: center; margin: 10px auto;}
+/* END Footer Widget 2 */
+ }
+@media (max-width: 768px){
+/* == COVID-19 POPUP == */
+#modal-shortcode {height: 650px; padding: 2em 6em 2em 2em; overflow-y: auto;}
+#modal-shortcode li {width: 90%;}
+.mw-title {
+    margin-bottom: 0.35em;
+} /* closing (max-width: 768px) section */ }
+@media (min-width: 768px){
+
+/* === Ticket form modifications === */
+body.page-tribe-attendee-registration .tribe-common .tribe-tickets__mini-cart .tribe-tickets__item__content__subtitle {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+.tribe-tickets-meta-required header h3 {
+     line-height: 100%;
+}
+/* === Registration Page Map === */
+.large-map {display: block;}
+.small-map {display: none;}
+.smallest-map {display: none;}
+/* === Registration Page Map === */
+.woocommerce-active .site-header .main-navigation { /* moves MENU to the left */
+    width: 100%;
+    float: left;
+    clear: none;
+}
+.columns-4 {margin: 0; padding: 0; width: 25%; float: left; text-align: center; min-width: 25%;}	
+/* == #nf-form-1-cont {width: 60%;} == */
+/* HEADER */
+.site-header {
+    padding-top: 1.24em;
+	height: 200px;
+}
+	
+/* NAVIGATION */
+.col-full::after {
+    content: " ";
+    display: block;
+    clear: none;
+}
+.storefront-primary-navigation {
+    clear: none;
+    margin-left: -99em;
+    margin-right: -99em;
+    padding-left: 99em;
+    padding-right: 99em;
+	padding-top: 8em;
+	top: -7em;
+	position:relative;
+} /* --- THIS CODE ALLOWS THE MENU TO SLIDE UP NEXT TO THE LOGO IN FULL SCREEN --- */
+.primary-navigation {
+    text-align: right;
+}
+.main-navigation ul li a, .secondary-navigation ul li a {
+    font-size: 0.925rem;
+}
+.main-navigation ul li, .secondary-navigation ul li {
+		text-transform: none;
+}
+.main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a {
+    padding: 0em 0.5em 1.18em 0.5em;
+}
+.main-navigation ul li a {
+    border-bottom: 0px solid;
+}
+.main-navigation ul li a:hover, .main-navigation ul li:hover > a {
+    background-image: url("images/menu-selector.png");  
+	background-repeat: no-repeat;   
+	background-position: center bottom; 
+}
+.site-header-cart .widget_shopping_cart, .main-navigation ul.menu ul.sub-menu, .main-navigation ul.nav-menu ul.children {
+    background-color: #ffe796 /*#fff0c5*/;
+}
+.main-navigation ul.menu ul a:hover,.main-navigation ul.menu ul li.focus,.main-navigation ul.menu ul li:hover>a,.main-navigation ul.nav-menu ul a:hover,.main-navigation ul.nav-menu ul li.focus,.main-navigation ul.nav-menu ul li:hover>a {
+  background-color:rgba(0,0,0,.0)
+ }
+/* LOGO */
+.site-header .site-branding, .site-header .site-logo-anchor, .site-header .site-logo-link { width: 230px !important; /* Use px values if you want, eg. 350px */ 
+	}
+.site-header .custom-logo-link img, .site-header .site-logo-anchor img, .site-header .site-logo-link img {
+		max-width: 270px !important /*230px !important*/;
+		width: 270px;
+}
+blockquote {
+    padding: 0 1em !important;
+    border-left: 3px solid rgb(255, 234, 172) !important;
+    border-bottom: 0px;
+    font-weight: 900;
+    float: right;
+    width: 50%;
+    max-width: 400px;
+    font-size: 2em;
+    line-height: 1.15;
+    font-style: normal;
+    margin-left: 2em!important;
+}
+/* HOME PAGE */
+.home-headline-left {
+float: left; 
+width: 52%;
+padding-bottom: 1em;
+}
+.home-headline-right {
+float: left; 
+width: 46%;
+	display: block;
+}
+.home-headline-left span {
+font-weight: 400;
+font-size: 1.5em;
+line-height: 1.3;
+width: 500px;
+color: #000;
+}
+.home-headline-left span.home-title {
+font-weight: 900;
+font-size: 7vw;
+height: 6vw;
+line-height: 55%;
+width: /*375px*/ 100%;
+display: block;
+}
+a.home-image {
+float: left; 
+width: 48%; 
+width: 100%;
+}
+.home-headline-wrapper {
+    top: -3em;
+    display: block;
+    position: relative;
+}
+/* ========= WooCommerce ========== */
+.col2-set .form-row-first {
+    margin-right: 5% !important;
+}
+.hentry .entry-content a:not(.button).tribe-checkout-backlink {
+    text-decoration: none;
+}
+.tribe-checkout-backlinks {
+    display: block;
+	float: right;
+}
+/* 	SPECIAL SNIPPETS */
+.alignleft {
+    display: inline-block;
+    float: left;
+    max-width: auto;
+	width: auto;
+	margin-right: 2em;
+}
+.alignright {
+    display: inline-block;
+    float: right;
+    max-width: auto;
+	width: auto;
+	margin-left: 2em;
+	margin-right: auto;
+}
+}
+@media (min-width: 1400px){
+.home-headline-left span.home-title {
+font-size: 6em;
+height: 0.85em;
+	}
+}
+
+/* Added by Bryan */
+.learning-columns {
+    border-radius: 15px;
+    border: solid;
+	padding: 20px 2px !important;
+    margin-right: 0 !important;
+}
+.site-header-cart {
+	display:none;
+}

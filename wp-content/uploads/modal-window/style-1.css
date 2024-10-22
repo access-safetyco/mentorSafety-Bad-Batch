@@ -1,0 +1,8 @@
+/* ========= INFORMATION ============================
+- document:  Wow Modal Windows Pro - The most powerful creator of popups & flyouts!
+- author:    Wow-Company & Dmytro Lobov
+- url:       https://wow-estore.com/item/wow-modal-windows-pro/
+- version:   2.3
+- email:     support@wow-company.com
+==================================================== */
+#wow-modal-overlay-1 { z-index: 999999; background-color: rgba(0, 0, 0, 0.7); } #wow-modal-overclose-1 { z-index: 999999; } #wow-modal-window-1{ width: 75%; padding: 10px; border: 3px solid #383838; z-index: 999999; position: fixed; top: 10%; right: 0; left: 0; border-radius:5px; height: auto; background: #ffffff; font-family: inherit; font-size: 15px; box-shadow: none; } .wow-modal-botton-1 { top:50%; right:-4px; font-size: 1.2em; text-decoration: none; float: none; text-shadow: none; cursor:pointer; z-index: 9999; } #wow-modal-close-1 { top: -15px;right: -15px; } #wow-modal-close-1.mw-close-btn.image:before { content: "\00d7"; text-align: center; width: 32px; height: 32px; line-height: 32px; color: #fff; font-family: inherit; font-size: 14px; font-weight: normal; font-style: normal; background: #000; border-radius: 25px; } #wow-modal-close-1.mw-close-btn.image:hover:before { color: #000; background: #fff; } #wow-modal-window-1 .mw-title { font-family: inherit; font-size: 32px; font-weight: normal; font-style: normal; line-height: 36px; text-align: center; color: #383838; } .wow-modal-botton-1 { color: #ffffff; border-radius: 4px; padding: 14px 14px; line-height: 14px; background: #383838; } .wow-modal-botton-1:hover { background: #797979; color: #ffffff; } @media only screen and (max-width: 1024px){ #wow-modal-window-1 { width:85%; } }
